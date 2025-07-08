@@ -1,0 +1,28 @@
+api_keys:
+  anthropic_api_key: 'YOUR_ANTHROPIC_API_KEY_HERE'
+  openai_api_key: 'YOUR_OPENAI_API_KEY_HERE'
+  mistral_api_key: 'YOUR_MISTRAL_API_KEY_HERE'
+development:
+  database_url: sqlite:///data/mcp_agents_dev.db
+  log_level: DEBUG
+  mcp_servers:
+  - http://localhost:8001
+  - http://localhost:8002
+  - http://localhost:8003
+  redis_url: redis://localhost:6379/0
+production:
+  database_url: postgresql://user:pass@db:5432/mcp_agents
+  log_level: WARNING
+  mcp_servers:
+  - http://mcp-context:8001
+  - http://mcp-tools:8002
+  - http://mcp-coordination:8003
+  redis_url: redis://redis:6379/0
+testing:
+  database_url: sqlite:///data/mcp_agents_test.db
+  log_level: INFO
+  mcp_servers:
+  - http://localhost:18001
+  - http://localhost:18002
+  - http://localhost:18003
+  redis_url: redis://localhost:6379/1 
