@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "mistral-ocr": {
+      "command": "/Users/astaneh/.pyenv/versions/3.11.9/bin/python",
+      "args": [
+        "/Users/astaneh/mcplord/mcp-agent-scaffolding/mistral_ocr_mcp_server.py"
+      ],
+      "cwd": "/Users/astaneh/mcplord"
+    }
+  }
+} 

@@ -1,0 +1,16 @@
+agents:
+  research_agent:
+    class: agents.examples.research_agent.ResearchAgent
+    config:
+      cost_limit: 25.0
+      log_level: INFO
+      max_iterations: 20
+      sleep_interval: 2.0
+    description: Autonomous research agent for information gathering and analysis
+    name: research_agent
+default_config:
+  cost_limit: 10.0
+  enable_tracing: true
+  log_level: INFO
+  max_iterations: 10
+  sleep_interval: 1.0

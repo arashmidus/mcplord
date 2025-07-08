@@ -1,0 +1,21 @@
+cost_aware_testing:
+  budget_limit: 100.0
+  default_sample_size: 10
+  enable_semantic_validation: true
+  results_dir: test_results
+semantic_validation:
+  cost_per_token: 3.0e-05
+  max_tokens: 1000
+  model_name: gpt-4
+  model_provider: openai
+  temperature: 0.1
+test_categories:
+  component:
+    budget_allocation: 0.4
+    priority: 2
+  system:
+    budget_allocation: 0.5
+    priority: 3
+  unit:
+    budget_allocation: 0.1
+    priority: 1

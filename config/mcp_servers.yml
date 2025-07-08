@@ -1,0 +1,20 @@
+client_config:
+  retry_attempts: 3
+  retry_delay: 1.0
+  timeout: 30.0
+servers:
+  context_server:
+    description: Context management and shared state server
+    enabled: true
+    transport_type: http
+    url: http://localhost:8001
+  coordination_server:
+    description: Agent coordination server
+    enabled: true
+    transport_type: http
+    url: http://localhost:8003
+  tools_server:
+    description: Tool execution server
+    enabled: true
+    transport_type: http
+    url: http://localhost:8002
